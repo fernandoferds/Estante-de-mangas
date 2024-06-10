@@ -3,6 +3,7 @@
 :root {
     --fonte-principal: "Teko", sans-serif;
     --cinza: #a4a1a1;
+    --laranja: #f97a2c;
     --cinza-escuro: #666666;
     --preto: #000000;
     --branco: #ffffff;
@@ -12,6 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: var(--laranja);
 }
 
 .letreiro__header {
@@ -136,6 +138,7 @@ body {
     justify-content: space-between;
     margin-top: 1rem;
     padding: 0.5rem 0.5rem 0.5rem 1rem;
+    background: var(--branco);
 }
 
 .nome__item,
