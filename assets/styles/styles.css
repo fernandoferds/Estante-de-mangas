@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+:root {
+    --fonte-principal: "Teko", sans-serif;
+    --cinza: #a4a1a1;
+    --cinza-escuro: #666666;
+    --preto: #000000;
+    --branco: #ffffff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.letreiro__header {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img__header {
+    width: 30vh;
+}
+
+.frase__header {
+    font-family: var(--fonte-principal);
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+
+
+.container__formulario {
+    width: 35%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+
+}
+
+
+.formulario__nome-manga,
+.formulario__nome-manga::placeholder {
+    font-size: 1.5rem;
+    font-family: var(--fonte-principal);
+    color: var(--preto);
+}
+
+.formulario__nome-manga {
+    width: 100%;
+    padding: 0.5rem;
+    background: var(--cinza);
+    box-sizing: border-box;
+}
+
+.infos__formulario {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0%;
+
+}
+
+.capitulo__manga,
+.lancamento__manga {
+    font-size: 1rem;
+    border-radius: 0;
+    border: solid var(--preto) 1px;
+    width: 48%;
+    padding: 0.5rem;
+
+}
+
+.botoes__formulario {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.formulario__salvar,
+.formulario__excluir {
+    display: flex;
+    font-size: 1rem;
+    font-family: var(--fonte-principal);
+    align-items: center;
+    top: 1rem;
+    justify-content: center;
+    background: var(--cinza);
+    border: solid var(--preto) 1px;
+}
+
+.formulario__salvar {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+
+}
+
+.adicionar__leitura {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fonte-principal);
+    font-size: 2rem;
+    width: 100%;
+    margin-top: 1rem;
+    background: var(--branco);
+    border: solid var(--preto) 2px;
+}
+
+.adicionar__leitura:active {
+    background: var(--preto);
+    color: var(--branco);
+    border: solid var(--branco) 6px;
+}
+
+.adicionar__leitura img {
+    width: 2rem;
+}
+
+.leituras_atuais {
+    width: 60%;
+    box-sizing: border-box;
+    margin-bottom: 5rem;
+}
+
+.item_leitura {
+    display: flex;
+    border: solid var(--preto) 2px;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+}
+
+.nome__item,
+.item__capitulo,
+.item__lancamento {
+    font-family: var(--fonte-principal);
+    width: 20%;
+    box-sizing: border-box;
+}
+
+.item__descricao {
+    font-size: 1rem;
+    color: var(--cinza-escuro);
+}
+
+.item__texto {
+    font-size: 1.5rem;
+}
+
+.nome__item {
+    width: 55%;
+}
+
+.editar__leitura {
+    width: 1.5rem;
+    padding: 0.2rem;
+    border: solid var(--cinza-escuro) 4px;
+    background: var(--cinza-escuro);
+}
+
+.editar__leitura:active {
+    border: solid var(--branco) 4px;
+    padding: 0.2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.formulario__atualizar {
+    margin-top: 1rem;
+}

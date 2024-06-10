@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estante de Leitura</title>
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="letreiro__header">
+            <img class="img__header" src="./assets/imagens/pngwing.com.png">
+            <h2 class="frase__header">Qual a sua proxima leitura?</h2>
+        </div>
+    </header>
+    <div class="container__formulario">
+        <form class="formulario__mangas hidden">
+            <textarea required rows="1" cols="60" class="formulario__nome-manga"
+                placeholder="Qual o nome da obra que você deseja adicionar?"></textarea>
+
+            <div class="infos__formulario">
+                <input required class="capitulo__manga" type="number" placeholder="Capitulo Atual?">
+                <select class="lancamento__manga" name="dia-da-semana">
+                    <option value="N/I">Selecione o dia da semana</option>
+                    <option value="domingo">Domingo</option>
+                    <option value="segunda">Segunda</option>
+                    <option value="terça">Terça</option>
+                    <option value="quarta">Quarta</option>
+                    <option value="quinta">Quinta</option>
+                    <option value="sexta">Sexta</option>
+                    <option value="sabado">Sabado</option>
+                </select>
+
+            </div>
+            <div class="botoes__formulario">
+                <button class="formulario__salvar">Adicionar</button>
+
+            </div>
+
+
+        </form>
+
+        <button class="adicionar__leitura"><img src="./assets/imagens/pngegg (1).png"> Adicionar nova leitura</button>
+    </div>
+    <ul class="leituras_atuais">
+
+        <!-- <li class="item_leitura">
+            <div class="nome__item">
+                <h3 class="item__descricao">Nome:
+
+                </h3>
+                <p class="item__texto">Naruto</p>
+            </div>
+
+            <div class="item__capitulo">
+                <h3 class="item__descricao">Capitulo:
+
+                </h3>
+                <p class="item__texto">360</p>
+            </div>
+
+            <div class="item__lancamento">
+                <h3 class="item__descricao">Dia de lançamento:
+
+                </h3>
+                <p class="item__texto">Quin</p>
+            </div>
+            <img class="editar__leitura" src="./assets/imagens/pincel.png" alt="editar leitura">
+        </li>
+    -->
+    </ul>
+
+</body>
+
+</html>
